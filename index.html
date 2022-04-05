@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,41 @@
 	<title>Data atributy</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body data-data-url="http://localhost/moje-data">
+
+	<!-- 
+	<div id="muj-div" data-ovoce="jablko"> </div>
+	<div id="muj-druhy-div" data-ovoce="hruška"> </div>
+
+
+	<div>
+
+		<button class="tlacitko-pozdravu"> Petře</button>
+		<button class="tlacitko-pozdravu">Romane</button>
+		<button class="tlacitko-pozdravu">Honzo</button>
+		<button class="tlacitko-pozdravu">Kláro</button>
+		<button class="tlacitko-pozdravu">Justýno</button>
+
+	</div>
+-->
+
 	<h1>Data atributy</h1>
 
 	<div class="ovoce">
-		<img src="obrazky/jablko.jpg">
-		<img src="obrazky/banan.jpg">
-		<img src="obrazky/kiwi.jpg">
+		<img src="obrazky/jablko.jpg" data-ovoce="jablko" data-kalorie="63" data-zeme-puvodu="ČR">
+		<img src="obrazky/banan.jpg" data-ovoce="banán" data-kalorie="94" data-zeme-puvodu="Honduraz">
+		<img src="obrazky/kiwi.jpg" data-ovoce="kiwi" data-kalorie="71" data-zeme-puvodu="Sri Lanka">
+
+
+
+		<div id="vysledek"></div>
+		<h1>celkem je znězeno <span id="celkem">0</span> kcal.</h1>
+		<div id="snezeno"></div>
+
 	</div>
-
-	<div id="vysledek"></div>
-
 	<script src="main.js"></script>
+	<script src="pozdravy.js"></script>
 </body>
+
 </html>
